@@ -1,0 +1,21 @@
+{
+    "name": "reqresin-project",
+    "version": "1.0.0",
+    "description": "API Testing GET and POST",
+    "type": "module",
+    "scripts": {
+      "cart": "mocha tests --recursive --timeout 20000 --reporter spec",
+      "reqresin": "mocha tests --recursive --timeout 10000 --reporter spec",
+      "jalanin-report-html": "mocha tests --recursive --reporter mocha-simple-html-reporter -–reporter-options output=report.html",
+      "jalanin-report-json": "mocha tests --recursive --reporter json > test.result.json"
+    },
+    "dependencies": {
+      "node-fetch": "^3.3.2",
+      "ajv": "^8.17.1"
+    },
+    "devDependencies": {
+      "mocha": "^10.8.2",
+      "chai": "^4.5.0",
+      "mocha-simple-html-reporter": "^2.0.0"
+    }
+  }
